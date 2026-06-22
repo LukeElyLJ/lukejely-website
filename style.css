@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -47,9 +45,7 @@ body {
   font-size: 0.9rem;
 }
 
-.nav a:hover {
-  color: #d6b56d;
-}
+.nav a:hover { color: #d6b56d; }
 
 .hero {
   min-height: 100vh;
@@ -57,21 +53,12 @@ body {
   display: flex;
   align-items: center;
   padding: 0 8%;
-  overflow: hidden;
-}
-
-.hero-bg {
-  position: absolute;
-  inset: 0;
   background:
     linear-gradient(90deg, rgba(0,0,0,0.92), rgba(0,0,0,0.45), rgba(0,0,0,0.85)),
-    url("images/hero-studio.jpg") center/cover;
-  z-index: -1;
+    url("IMG_6138.jpeg") center/cover;
 }
 
-.hero-content {
-  max-width: 850px;
-}
+.hero-content { max-width: 850px; }
 
 .eyebrow,
 .section-label {
@@ -152,13 +139,9 @@ h3 {
   color: #d6b56d;
 }
 
-.section {
-  padding: 110px 8%;
-}
+.section { padding: 110px 8%; }
 
-.dark {
-  background: #0e0e0e;
-}
+.dark { background: #0e0e0e; }
 
 .work-grid {
   display: grid;
@@ -188,21 +171,26 @@ h3 {
   height: 300px;
   object-fit: cover;
   display: block;
+  background: #111;
 }
 
-.project-card div {
-  padding: 28px;
-}
+.project-card div { padding: 28px; }
 
 .project-card iframe {
-  margin-top: 20px;
+  width: 100%;
   border: none;
   border-radius: 12px;
+  margin-top: 20px;
+  background: #000;
 }
 
-.large {
-  grid-column: span 2;
-}
+.audio { height: 90px; }
+
+.video { height: 390px; }
+
+.spotify { height: 352px; }
+
+.large { grid-column: span 2; }
 
 .services-grid {
   display: grid;
@@ -210,9 +198,7 @@ h3 {
   gap: 22px;
 }
 
-.service {
-  padding: 30px;
-}
+.service { padding: 30px; }
 
 .about {
   display: grid;
@@ -293,9 +279,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .large {
-    grid-column: span 1;
-  }
+  .large { grid-column: span 1; }
+
+  .video { height: 300px; }
 }
 
 @media (max-width: 650px) {
@@ -317,9 +303,7 @@ footer {
     padding: 70px 6%;
   }
 
-  .section {
-    padding: 78px 6%;
-  }
+  .section { padding: 78px 6%; }
 
   .buttons,
   .social-links {
@@ -335,4 +319,6 @@ footer {
   .about-img {
     height: 260px;
   }
+
+  .video { height: 240px; }
 }
